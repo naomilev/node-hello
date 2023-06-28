@@ -24,3 +24,5 @@ jobs:
       with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: docker push
+      run: docker push naomilev1/hello-node:node
